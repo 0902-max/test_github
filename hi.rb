@@ -39,3 +39,5 @@ tax = total * 0.08
 puts tax
 p total + tax
 puts total
+puts 1<2
+puts 1>2
