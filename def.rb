@@ -50,3 +50,30 @@ def thanks_and_receipt(receipt)
 end
 p thanks_and_receipt(true)
 p thanks_and_receipt(false)
+
+def order(item)
+  "#{item}をください"
+end
+p order("カフェラテ")
+p order("モカ")
+
+def order(item = "コーヒー")
+  "#{item}をください"
+end
+p order
+p order("カフェラテ")
+p order("モカ")
+
+def order(item:, size:)
+  "#{item}を#{size}サイズでください"
+end
+
+p order(item: "カフェラテ",size: "ベンティ")
+p order(size: "ベンティ",item:"カフェラテ")
+
+def order(item:, size: "ショート")
+  "#{item}を#{size}サイズでください"
+end
+
+p order(item: "カフェラテ")
+p order(size: "ベンティ",item:"カフェラテ")
