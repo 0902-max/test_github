@@ -1,9 +1,8 @@
 def cube
-  limit = 700700700
   max = 1
-  while max ** 3 <= limit
+  while max ** 3 <= 700700700
     max += 1
   end
-  return (max - 1) ** 3
+  p (max - 1) ** 3
 end
-puts cube
+cube
